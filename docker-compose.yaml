@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: DockerFile_app
+    container_name: demo-ci-cd
+    restart: always
+    image: demo-ci-cd_image
+    ports:
+      - 8080:8080
